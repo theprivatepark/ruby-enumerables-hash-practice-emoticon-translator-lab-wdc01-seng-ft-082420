@@ -20,6 +20,7 @@ def get_english_meaning(file,jap_emoticon)
   library.each do |meaning, emoticons|
     if library[meaning][:japanese] == jap_emoticon
       results = meaning
+      binding.pry
     end
   end
   results
